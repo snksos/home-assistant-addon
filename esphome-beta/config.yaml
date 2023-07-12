@@ -40,4 +40,4 @@ stage: experimental
 advanced: true
 options:
   home_assistant_dashboard_integration: false
-
+name: snkso
