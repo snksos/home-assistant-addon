@@ -34,12 +34,13 @@ base: &base
     ssl: bool?
     certfile: str?
     keyfile: str?
-    relative_url: str?
     leave_front_door_open: bool?
   backup_exclude:
     - "*/*/"
   # Disable docker init for s6
   init: false
+  # Make sure dashboard is available for core
+  startup: services
 
 esphome-dev:
   <<: *base
@@ -60,7 +61,6 @@ esphome-dev:
     ssl: bool?
     certfile: str?
     keyfile: str?
-    relative_url: str?
     leave_front_door_open: bool?
   base_image: ghcr.io/esphome/esphome-hassio:dev
   options:
@@ -70,7 +70,7 @@ esphome-beta:
   <<: *base
   directory: esphome-beta
   name: ESPHome (beta)
-  version: '2023.6.5'  # BETA
+  version: '2024.3.0b2'  # BETA
   slug: esphome-beta
   description: "Beta version of ESPHome add-on"
   url: https://beta.esphome.io/
@@ -84,7 +84,7 @@ esphome-stable:
   <<: *base
   directory: esphome
   name: ESPHome
-  version: '2023.6.5'  # STABLE
+  version: '2024.2.2'  # STABLE
   slug: esphome
   description: "ESPHome add-on for intelligently managing all your ESP8266/ESP32 devices"
   image: ghcr.io/esphome/esphome-hassio

@@ -26,13 +26,13 @@ schema:
   ssl: bool?
   certfile: str?
   keyfile: str?
-  relative_url: str?
   leave_front_door_open: bool?
 backup_exclude:
 - '*/*/'
 init: false
+startup: services
 name: ESPHome (beta)
-version: 2023.6.5
+version: 2024.3.0b2
 slug: esphome-beta
 description: Beta version of ESPHome add-on
 image: ghcr.io/esphome/esphome-hassio
