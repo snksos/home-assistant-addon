@@ -30,12 +30,13 @@ schema:
 backup_exclude:
 - '*/*/'
 init: false
+aa: bb
 startup: services
 name: ESPHome Device Compiler (beta)
 panel_title: ESPHome Compiler (beta)
-version: 2024.12.0b1
+version: 2024.12.0b2
 slug: esphome-beta
-description: Beta version of ESPHome Device Compiler
+description: Beta version of ESPHome Device Compiler xxxx
 image: ghcr.io/esphome/esphome-hassio
 stage: experimental
 advanced: true
