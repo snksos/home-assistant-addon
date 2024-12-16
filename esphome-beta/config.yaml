@@ -34,10 +34,10 @@ aa: bbc
 startup: services
 name: ESPHome Device Compiler (beta)
 panel_title: ESPHome Compiler (beta)
-version: 2024.12.0b7
+version: 2024.12.0b8
 aab: bbc
 slug: esphome-beta
-description: Beta version of ESPHome Device Builder
+description: Beta version of ESPHome Device Compiler
 image: ghcr.io/esphome/esphome-hassio
 stage: experimental
 advanced: true
